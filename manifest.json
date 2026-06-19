@@ -1,0 +1,38 @@
+{
+  "name": "cortex-plugin-autoscaling",
+  "version": "1.0.0",
+  "description": "Autoscaling Policy Optimizer — Analyze traffic patterns to recommend optimal HPA/VPA or cloud autoscaling policies",
+  "kind": "esm",
+  "entryPoint": "mod.ts",
+  "runtime": "deno",
+  "author": "CortexPrism",
+  "license": "MIT",
+  "repository": "https://github.com/CortexPrism/cortex-plugin-autoscaling",
+  "homepage": "https://cortexprism.io/marketplace/plugins/autoscaling",
+  "capabilities": ["tools", "network:fetch"],
+  "tools": [
+    {
+      "name": "autoscale_analyze",
+      "description": "Analyze traffic and utilization patterns",
+      "params": []
+    },
+    {
+      "name": "autoscale_recommend",
+      "description": "Recommend optimal scaling policy",
+      "params": []
+    },
+    {
+      "name": "autoscale_compare",
+      "description": "Compare cost vs latency tradeoffs",
+      "params": []
+    },
+    {
+      "name": "autoscale_apply",
+      "description": "Apply recommended policy with approval",
+      "params": []
+    }
+  ],
+  "dependencies": {},
+  "peerDependencies": { "cortex": ">=1.0.0" },
+  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+}
